@@ -1,2 +1,12 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using System;
+
+namespace MiniVille
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Game g = new Game();
+        }
+    }
+}
