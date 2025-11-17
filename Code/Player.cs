@@ -1,4 +1,6 @@
-﻿namespace MiniVille_chez_ouam
+﻿using Miniville;
+
+namespace MiniVille
 {
     internal class Player
     {
@@ -19,12 +21,11 @@
             {
                 Money -= card.Cost;
                 City.Add(card);
-                Console.WriteLine("{0} achète une carte {1}.", Name, card.Name);
             }
             else { Console.WriteLine("{0} n'a pas assez d'argent pour acheter une carte {1}", Name, card.Name); }
         }
 
-        public void ActivateCards(int diceValue, bool isCurrentPlayer)
+        public void ActivateCards(int diceValue, bool isCurrentPlayer, Player opponent)
         {
             foreach (Cards c in City)
             {
@@ -40,7 +41,16 @@
                     }
                     else if (c.Color == "Red" && !isCurrentPlayer)
                     {
-                        Money += c.Gain;
+                        if (opponent.Money >= 2 && c.Gain == 2)
+                        {
+                            Money += 2;
+                            opponent.Money -= 2;
+                        }
+                        else if (opponent.Money >= 1)
+                        {
+                            Money += 1;
+                            opponent.Money -= 1;
+                        }
                     }
                 }
             }
@@ -49,6 +59,7 @@
         public void ShowCity()
         {
             List<int> alreadyDone = new List<int>();
+            List<int> alreadyCount = new List<int>();
             Console.WriteLine("\nVille de {0} :", Name);
             foreach (Cards c in City)
             {
@@ -56,7 +67,14 @@
                 {
                     alreadyDone.Add(c.Id);
                     string space = " ";
-                    int numberOfCards = 3;
+                    int cardCount = 0;
+                    for (int i = 0; i < City.Count; i++)
+                    {
+                        if (City[i].Id == c.Id)
+                        {
+                            cardCount++;
+                        }
+                    }
                     switch (c.Color)
                     {
                         case "Green":
@@ -74,9 +92,10 @@
                     {
                         Console.Write(space);
                     }
-                    Console.Write("|\n|              |\n|Cost:{0}$       |\n|Gain:{1}$       |\n+==============+\n       x{2}\n", c.Cost, c.Gain, numberOfCards);
+                    Console.Write("|\n|              |\n|Cost:{0}$       |\n|Gain:{1}$       |\n+==============+\n       x{2}\n", c.Cost, c.Gain, cardCount);
                 }
             }
+            Console.ForegroundColor = ConsoleColor.White;
         }
     }
 }

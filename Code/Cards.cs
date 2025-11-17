@@ -1,4 +1,4 @@
-﻿namespace MiniVille_chez_ouam
+﻿namespace MiniVille
 {
 
     public class Cards

@@ -1,6 +1,7 @@
-﻿using Miniville;
+﻿using System;
+using Miniville;
 
-namespace MiniVille_chez_ouam
+namespace MiniVille
 {
     public class Game
     {
@@ -43,15 +44,17 @@ namespace MiniVille_chez_ouam
         {
             Console.WriteLine($"\n--- Tour de {active.Name} ---");
             active.ShowCity();
-            Console.WriteLine("Appuyez sur Entrée pour lancer le dé.");
-            if (!isAI) Console.ReadLine();
+            if (!isAI)
+            {
+                Console.WriteLine("Appuyez sur Entrée pour lancer le dé.");
+                Console.ReadLine();
+            }
 
             int result = dice.Roll();
-            Console.WriteLine($"{active.Name} a obtenu {result}.");
 
             // Activation des cartes
-            opponent.ActivateCards(result, false);
-            active.ActivateCards(result, true);
+            opponent.ActivateCards(result, false, active);
+            active.ActivateCards(result, true, opponent);
 
             // Vérifier victoire
             if (active.Money >= 20)
@@ -62,17 +65,24 @@ namespace MiniVille_chez_ouam
 
             // Achat de carte
             if (isAI)
+            {
+                Console.WriteLine($"{active.Name} a obtenu {result}.");
                 AIBuyCard(active);
+
+            }
             else
-                PlayerBuyCard(active);
+                PlayerBuyCard(active, result);
 
             return false;
         }
 
-        private void PlayerBuyCard(Player player)
+        private void PlayerBuyCard(Player player, int result)
         {
-            player.ShowCity();
-            Console.WriteLine("\nSouhaitez-vous acheter une carte ? (o/n)");
+            Console.WriteLine($"{player.Name} a obtenu {result}.");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine("Pièces : {0}", player.Money);
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.WriteLine("Souhaitez-vous acheter une carte ? (o/n)");
             string choice = Console.ReadLine()?.ToLower();
 
             if (choice == "o")
@@ -103,7 +113,7 @@ namespace MiniVille_chez_ouam
                 {
                     player.AddCard(card);
                     piles.AvailableCards.Remove(card);
-                    Console.WriteLine($"{player.Name} achète {card.Name} !");
+                    Console.WriteLine($"{player.Name} achète {card.Name} !"); //good
                 }
                 else
                 {
@@ -121,13 +131,15 @@ namespace MiniVille_chez_ouam
                 var card = choix[rand.Next(choix.Count)];
                 ai.AddCard(card);
                 piles.AvailableCards.Remove(card);
-                Console.WriteLine($"{ai.Name} achète {card.Name}.");
+                Console.WriteLine($"{ai.Name} achète {card.Name}."); //good
             }
             else
             {
                 Console.WriteLine($"{ai.Name} ne peut rien acheter.");
             }
+            Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine($"Argent restant: {ai.Money}");
+            Console.ForegroundColor = ConsoleColor.White;
         }
     }
 }
