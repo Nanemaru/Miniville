@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApp1
+namespace MiniVille_chez_ouam
 {
     internal class Player
     {
@@ -54,7 +54,7 @@ namespace ConsoleApp1
 
         public void ShowCity()
         {
-            List<int> alreadyDone = new List<int>;
+            List<int> alreadyDone = new List<int>();
             Console.WriteLine("\nVille de {0} :", Name);
             foreach (Cards c in City)
             {
@@ -80,7 +80,7 @@ namespace ConsoleApp1
                     {
                         Console.Write(space);
                     }
-                    Console.Write("|\n|              |\n|_cost:{0}$       |\n|Gain:{1}$       |\n+==============+\n       x{2}", c.Cost, c.Gain, numberOfCards);
+                    Console.Write("|\n|              |\n|Cost:{0}$       |\n|Gain:{1}$       |\n+==============+\n       x{2}", c.Cost, c.Gain, numberOfCards);
                 }
             }
         }
