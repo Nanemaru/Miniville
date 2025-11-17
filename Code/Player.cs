@@ -38,15 +38,15 @@ namespace ConsoleApp1
                 {
                     if (c.Color == "Blue")
                     {
-                        Money += c.Gain
+                        Money += c.Gain;
                     }
                     else if (c.Color == "Green" && isCurrentPlayer)
                     {
-                        Money += c.Gain
+                        Money += c.Gain;
                     }
                     else if (c.Color == "Red" && !isCurrentPlayer)
                     {
-                        Money += c.Gain
+                        Money += c.Gain;
                     }
                 }
             }
