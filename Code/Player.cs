@@ -16,9 +16,9 @@ namespace ConsoleApp1
         {
             Name = name;
             Money = 3;
-            City = new List<Cards>;
+            City = new List<Cards>();
         }
-        
+
         public void AddCard(Cards card)
         {
             if (Money >= card.Cost)
@@ -27,14 +27,14 @@ namespace ConsoleApp1
                 City.Add(card);
                 Console.WriteLine("{0} achète une carte {1}.", Name, card.Name);
             }
-            else { Console.Writeline("{0} n'a pas assez d'argent pour acheter une carte {1}", Name, card.Name); }
+            else { Console.WriteLine("{0} n'a pas assez d'argent pour acheter une carte {1}", Name, card.Name); }
         }
 
         public void ActivateCard(int diceValue, bool isCurrentPlayer)
         {
             foreach (Cards c in City)
             {
-                if (diceValue == c.Dice) 
+                if (diceValue == c.Dice)
                 {
                     if (c.Color == "Blue")
                     {
@@ -76,13 +76,14 @@ namespace ConsoleApp1
                             break;
                     }
                     Console.Write("+==============+\n| Activation:{0} |\n|              |\n|              |\n|              |\n|              |\n|              |\n|{1}", c.Dice, c.Name);
-                    for (int i = (14 - name.Length); i > 0; i--)
+                    for (int i = (14 - c.Name.Length); i > 0; i--)
                     {
                         Console.Write(space);
                     }
-                    Console.Write("|\n|              |\n|Cost:{0}$       |\n|Gain:{1}$       |\n+==============+\n       x{2}", c.Cost, c.Gain, numberOfCards);
+                    Console.Write("|\n|              |\n|_cost:{0}$       |\n|Gain:{1}$       |\n+==============+\n       x{2}", c.Cost, c.Gain, numberOfCards);
                 }
             }
         }
     }
 }
+
