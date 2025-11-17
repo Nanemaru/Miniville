@@ -4,7 +4,6 @@ namespace MiniVille
 {
 
     public class Cards
-        public class Cards
     {
         public int Id { get; private set; }
         public string Name { get; private set; }
