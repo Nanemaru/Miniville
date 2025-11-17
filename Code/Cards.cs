@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
-        internal class Cards
+        public class Cards
     {
         public int _id;
         public string _color;
@@ -23,7 +23,7 @@ namespace ConsoleApp1
             {4, "Superette"}, {5, "Forêt"}, {6, "Restaurant"}, {7, "Stade"}
         };
 
-        internal Cards(CardsInfo info)
+        public Cards(CardsInfo info)
         {
             _id = info.Id;
             _color = info.Color;
