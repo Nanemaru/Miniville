@@ -1,12 +1,118 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using MiniVille;
+using System;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace ConsoleApp1
+namespace MiniVille
 {
-    internal class Game
+    public class Game
     {
+        private Dice dice;
+        private Player player;
+        private Player ai;
+        private Piles piles;
+
+        public Game()
+        {
+            dice = new Dice();
+            piles = new Piles();
+            player = new Player("Joueur");
+            ai = new Player("Ordinateur");
+
+            // Cartes de départ
+            var champ = piles.AvailableCards.First(c => c.Name == "Champs de blé");
+            var boulangerie = piles.AvailableCards.First(c => c.Name == "Boulangerie");
+            player.City.Add(champ);
+            player.City.Add(boulangerie);
+            ai.City.Add(champ);
+            ai.City.Add(boulangerie);
+
+            Start();
+        }
+
+        private void Start()
+        {
+            Console.WriteLine("=== MiniVilles ===");
+            Console.WriteLine("Objectif : atteindre 20 pièces pour gagner !");
+
+            while (true)
+            {
+                if (PlayerTurn(player, ai)) break;
+                if (PlayerTurn(ai, player, isAI: true)) break;
+            }
+        }
+
+        private bool PlayerTurn(Player active, Player opponent, bool isAI = false)
+        {
+            Console.WriteLine($"\n--- Tour de {active.Name} ---");
+            active.ShowCity();
+            Console.WriteLine("Appuyez sur Entrée pour lancer le dé.");
+            if (!isAI) Console.ReadLine();
+
+            int result = dice.Roll();
+            Console.WriteLine($"{active.Name} a obtenu {result}.");
+
+            // Activation des cartes
+            opponent.ActivateCards(result, false);
+            active.ActivateCards(result, true);
+
+            // Vérifier victoire
+            if (active.Money >= 20)
+            {
+                Console.WriteLine($"\n{active.Name} a gagné avec {active.Money} pièces !");
+                return true;
+            }
+
+            // Achat de carte
+            if (isAI)
+                AIBuyCard(active);
+            else
+                PlayerBuyCard(active);
+
+            return false;
+        }
+
+        private void PlayerBuyCard(Player player)
+        {
+            player.ShowCity();
+            Console.WriteLine("\nSouhaitez-vous acheter une carte ? (o/n)");
+            string choice = Console.ReadLine()?.ToLower();
+
+            if (choice == "o")
+            {
+                Console.WriteLine(Piles);
+                Console.WriteLine("Entrez le nom exact de la carte à acheter :");
+                string name = Console.ReadLine();
+
+                var card = piles.AvailableCards.FirstOrDefault(c => c.Name.Equals(name, StringComparison.OrdinalIgnoreCase));
+                if (card != null && player.Money >= card.Cost)
+                {
+                    player.AddCard(card);
+                    piles.AvailableCards.Remove(card);
+                    Console.WriteLine($"{player.Name} achète {card.Name} !");
+                }
+                else
+                {
+                    Console.WriteLine("Achat impossible.");
+                }
+            }
+        }
+
+        private void AIBuyCard(Player ai)
+        {
+            var choix = piles.AvailableCards.Where(c => c.Cost <= ai.Money).ToList();
+            if (choix.Count > 0)
+            {
+                var rand = new Random();
+                var card = choix[rand.Next(choix.Count)];
+                ai.AddCard(card);
+                piles.AvailableCards.Remove(card);
+                Console.WriteLine($"{ai.Name} achète {card.Name}.");
+            }
+            else
+            {
+                Console.WriteLine($"{ai.Name} ne peut rien acheter.");
+            }
+            Console.WriteLine($"Argent restant: {ai.Money}");
+        }
     }
 }
