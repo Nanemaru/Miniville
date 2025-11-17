@@ -1,22 +1,19 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace ConsoleApp1
+namespace MiniVille
 {
     public class Dice
     {
-        private Random rdm = new Random();
+        private Random random;
 
-        public static Dice() { }
-
-        public static int Roll()
+        public Dice()
         {
-            int result = rdm.Next(1, 7);
-            return result;
+            random = new Random();
         }
 
+        public int Roll()
+        {
+            return random.Next(1, 7); // 1 à 6
+        }
     }
 }
