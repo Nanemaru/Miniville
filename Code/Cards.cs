@@ -19,8 +19,8 @@ namespace ConsoleApp1
         /// Dictionnaire pour associer les id et les noms des cartes <Key, Value>
         public Dictionary<int, string> cardsDictionnary = new Dictionary<int, string>()
         {
-            {1, "Champs de blé" } , {2, "Ferme"}, {3, "Boulangerie"}, {4, "Café"} ,
-            {5, "Superette"}, {6, "Forêt"}, {7, "Restaurant"}, {8, "Stade"}
+            {0, "Champs de blé" } , {1, "Ferme"}, {2, "Boulangerie"}, {3, "Café"} ,
+            {4, "Superette"}, {5, "Forêt"}, {6, "Restaurant"}, {7, "Stade"}
         };
 
         internal Cards(CardsInfo info)
@@ -38,7 +38,7 @@ namespace ConsoleApp1
         {
             switch (id)
             {
-                case 1: //Champ de blé
+                case 0: //Champ de blé
                     _dice = 1;
                     _color = "blue";
                     _name = cardsDictionnary[id];
@@ -47,7 +47,7 @@ namespace ConsoleApp1
                     _cost = 1;
                     break;
 
-                case 2: //Ferme
+                case 1: //Ferme
                     _dice = 1;
                     _color = "blue";
                     _name = cardsDictionnary[id];
@@ -56,7 +56,7 @@ namespace ConsoleApp1
                     _cost = 2;
                     break;
 
-                case 3: //Boulangerie
+                case 2: //Boulangerie
                     _dice = 2;
                     _color = "green";
                     _name = cardsDictionnary[id];
@@ -65,7 +65,7 @@ namespace ConsoleApp1
                     _cost = 1;
                     break;
 
-                case 4: //Café
+                case 3: //Café
                     _dice = 3;
                     _color = "red";
                     _name = cardsDictionnary[id];
@@ -74,7 +74,7 @@ namespace ConsoleApp1
                     _cost = 2;
                     break;
 
-                case 5: //Superette
+                case 4: //Superette
                     _dice = 4;
                     _color = "green";
                     _name = cardsDictionnary[id];
@@ -83,7 +83,7 @@ namespace ConsoleApp1
                     _cost = 2;
                     break;
 
-                case 6: //Forêt
+                case 5: //Forêt
                     _dice = 5;
                     _color = "blue";
                     _name = cardsDictionnary[id];
@@ -92,7 +92,7 @@ namespace ConsoleApp1
                     _cost = 2;
                     break;
 
-                case 7: //Restaurant
+                case 6: //Restaurant
                     _dice = 5;
                     _color = "red";
                     _name = cardsDictionnary[id];
@@ -101,7 +101,7 @@ namespace ConsoleApp1
                     _cost = 4;
                     break;
 
-                case 8: //Stade
+                case 7: //Stade
                     _dice = 6;
                     _color = "blue";
                     _name = cardsDictionnary[id];
