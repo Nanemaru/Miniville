@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace MiniVille
+﻿namespace MiniVille_chez_ouam
 {
     class Program
     {

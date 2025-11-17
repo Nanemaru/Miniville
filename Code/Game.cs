@@ -1,8 +1,6 @@
-﻿using MiniVille;
-using System;
-using System.Linq;
+﻿using Miniville;
 
-namespace MiniVille
+namespace MiniVille_chez_ouam
 {
     public class Game
     {
@@ -79,7 +77,24 @@ namespace MiniVille
 
             if (choice == "o")
             {
-                Console.WriteLine(Piles);
+                List<int> alreadyDisplayedCards = new List<int>();
+                int cardCount = 0;
+                foreach (Cards c in piles.AvailableCards)
+                {
+                    if (!alreadyDisplayedCards.Contains(c.Id))
+                    {
+                        alreadyDisplayedCards.Add(c.Id);
+                        for (int i = 0; i < piles.AvailableCards.Count; i++)
+                        {
+                            if (piles.AvailableCards[i].Id == c.Id)
+                            {
+                                cardCount++;
+                            }
+                        }
+                        Console.WriteLine("x{0} {1}", cardCount, c.Name);
+                        cardCount = 0;
+                    }
+                }
                 Console.WriteLine("Entrez le nom exact de la carte à acheter :");
                 string name = Console.ReadLine();
 

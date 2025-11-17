@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace MiniVille_chez_ouam
+﻿namespace MiniVille_chez_ouam
 {
     internal class Player
     {
@@ -30,7 +24,7 @@ namespace MiniVille_chez_ouam
             else { Console.WriteLine("{0} n'a pas assez d'argent pour acheter une carte {1}", Name, card.Name); }
         }
 
-        public void ActivateCard(int diceValue, bool isCurrentPlayer)
+        public void ActivateCards(int diceValue, bool isCurrentPlayer)
         {
             foreach (Cards c in City)
             {
@@ -80,10 +74,9 @@ namespace MiniVille_chez_ouam
                     {
                         Console.Write(space);
                     }
-                    Console.Write("|\n|              |\n|Cost:{0}$       |\n|Gain:{1}$       |\n+==============+\n       x{2}", c.Cost, c.Gain, numberOfCards);
+                    Console.Write("|\n|              |\n|Cost:{0}$       |\n|Gain:{1}$       |\n+==============+\n       x{2}\n", c.Cost, c.Gain, numberOfCards);
                 }
             }
         }
     }
 }
-

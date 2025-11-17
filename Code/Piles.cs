@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using MiniVille_chez_ouam;
 
 namespace Miniville
 {
@@ -10,16 +6,16 @@ namespace Miniville
     {
         public List<Cards> AvailableCards = new List<Cards> { };
 
-        private Cards champBle = new Cards(0, "Bleu", 1, "Champs de blé", "Recevez 1 pièce", 1, 1);
-        private Cards ferme = new Cards(1, "Bleu", 2, "Ferme", "Recevez 1 pièce", 1, 1);
-        private Cards boulangerie = new Cards(2, "Vert", 1, "Boulangerie", "Recevez 2 pièces", 2, 2);
-        private Cards cafe = new Cards(3, "Rouge ", 2, "Café", "Recevez 1 pièce du joueur qui a lancé le dé", 3, 1);
-        private Cards superette = new Cards(4, "Vert ", 2, "Superette", "Recevez 3 pièces", 4, 3);
-        private Cards foret = new Cards(5, "Bleu ", 2, "Forêt", "Recevez 1 pièce", 5, 1);
-        private Cards restaurant = new Cards(6, "Rouge ", 4, "Restaurant", "Recevez 2 pièces du joueur qui a lancé le dé", 5, 2);
-        private Cards stade = new Cards(7, "Bleu ", 6, "Stade", "Recevez 4 pièces", 6, 4);
+        private static Cards.CardsInfo champBle = new Cards.CardsInfo(0, "Bleu", 1, "Champs de blé", "Recevez 1 pièce", 1, 1);
+        private static Cards.CardsInfo ferme = new Cards.CardsInfo(1, "Bleu", 2, "Ferme", "Recevez 1 pièce", 1, 1);
+        private static Cards.CardsInfo boulangerie = new Cards.CardsInfo(2, "Vert", 1, "Boulangerie", "Recevez 2 pièces", 2, 2);
+        private static Cards.CardsInfo cafe = new Cards.CardsInfo(3, "Rouge ", 2, "Café", "Recevez 1 pièce du joueur qui a lancé le dé", 3, 1);
+        private static Cards.CardsInfo superette = new Cards.CardsInfo(4, "Vert ", 2, "Superette", "Recevez 3 pièces", 4, 3);
+        private static Cards.CardsInfo foret = new Cards.CardsInfo(5, "Bleu ", 2, "Forêt", "Recevez 1 pièce", 5, 1);
+        private static Cards.CardsInfo restaurant = new Cards.CardsInfo(6, "Rouge ", 4, "Restaurant", "Recevez 2 pièces du joueur qui a lancé le dé", 5, 2);
+        private static Cards.CardsInfo stade = new Cards.CardsInfo(7, "Bleu ", 6, "Stade", "Recevez 4 pièces", 6, 4);
 
-        Dictionary<int, Cards> dico = new Dictionary<int, Cards>
+        Dictionary<int, Cards.CardsInfo> dico = new Dictionary<int, Cards.CardsInfo>
         {
             {0, champBle},
             {1, ferme},
@@ -42,17 +38,7 @@ namespace Miniville
         {
             for (int i = 0; i < 6; i++)
             {
-                /*
-                AvailableCards.Add(champBle);
-                AvailableCards.Add(ferme);
-                AvailableCards.Add(boulangerie);
-                AvailableCards.Add(cafe);
-                AvailableCards.Add(superette);
-                AvailableCards.Add(foret);
-                AvailableCards.Add(restaurant);
-                AvailableCards.Add(stade);
-                */
-                for (int j = 0; j < 8; j++) AvailableCards.Add(dico[j].Value);
+                for (int j = 0; j < 8; j++) AvailableCards.Add(new Cards(dico[j]));
             }
         }
 
