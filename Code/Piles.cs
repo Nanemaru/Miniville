@@ -71,6 +71,8 @@ namespace Miniville
                 }
 
                 toString += string.Format("{0} * {1} - {2} [{3}] : {4} - {5}$ \n", cardCount, dico[i].Name, dico[i].Color, dico[i].Dice, dico[i].Effect, dico[i].Cost)
+
+                return toString;
             }
         }
     }
