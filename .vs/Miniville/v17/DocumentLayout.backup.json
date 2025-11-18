@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Master\\Desktop\\Cours\\USRS46 - Introduction \u00E0 la POO en C#\\Module 1\\Miniville\\",
+  "WorkspaceRootPath": "C:\\Users\\Bouet\\OneDrive\\Bureau\\Kerian\\CNAM ENJMIN\\Travail en ligne\\Prog\\Travail git\\Miniville\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{24377BD7-CA1E-49B9-B83E-3BA7892368FF}|Miniville.csproj|c:\\users\\master\\desktop\\cours\\usrs46 - introduction \u00E0 la poo en c#\\module 1\\miniville\\code\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{24377BD7-CA1E-49B9-B83E-3BA7892368FF}|Miniville.csproj|c:\\users\\bouet\\onedrive\\bureau\\kerian\\cnam enjmin\\travail en ligne\\prog\\travail git\\miniville\\code\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{24377BD7-CA1E-49B9-B83E-3BA7892368FF}|Miniville.csproj|solutionrelative:code\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -14,8 +14,12 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
@@ -24,11 +28,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Game.cs",
-              "DocumentMoniker": "C:\\Users\\Master\\Desktop\\Cours\\USRS46 - Introduction \u00E0 la POO en C#\\Module 1\\Miniville\\Code\\Game.cs",
+              "DocumentMoniker": "C:\\Users\\Bouet\\OneDrive\\Bureau\\Kerian\\CNAM ENJMIN\\Travail en ligne\\Prog\\Travail git\\Miniville\\Code\\Game.cs",
               "RelativeDocumentMoniker": "Code\\Game.cs",
-              "ToolTip": "C:\\Users\\Master\\Desktop\\Cours\\USRS46 - Introduction \u00E0 la POO en C#\\Module 1\\Miniville\\Code\\Game.cs*",
-              "RelativeToolTip": "Code\\Game.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAANAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Bouet\\OneDrive\\Bureau\\Kerian\\CNAM ENJMIN\\Travail en ligne\\Prog\\Travail git\\Miniville\\Code\\Game.cs",
+              "RelativeToolTip": "Code\\Game.cs",
+              "ViewState": "AgIAAFkAAAAAAAAAAADwv2MAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-18T09:14:47.957Z",
               "EditorCaption": ""
