@@ -77,13 +77,13 @@ namespace MiniVille
                     }
                     switch (c.Color)
                     {
-                        case "Green":
+                        case "Vert":
                             Console.ForegroundColor = ConsoleColor.DarkGreen;
                             break;
-                        case "Blue":
+                        case "Bleu":
                             Console.ForegroundColor = ConsoleColor.Cyan;
                             break;
-                        case "Red":
+                        case "Rouge":
                             Console.ForegroundColor = ConsoleColor.DarkRed;
                             break;
                     }
