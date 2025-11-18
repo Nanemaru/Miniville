@@ -31,15 +31,15 @@ namespace MiniVille
             {
                 if (diceValue == c.Dice)
                 {
-                    if (c.Color == "Blue")
+                    if (c.Color == "Bleu")
                     {
                         Money += c.Gain;
                     }
-                    else if (c.Color == "Green" && isCurrentPlayer)
+                    else if (c.Color == "Vert" && isCurrentPlayer)
                     {
                         Money += c.Gain;
                     }
-                    else if (c.Color == "Red" && !isCurrentPlayer)
+                    else if (c.Color == "Rouge" && !isCurrentPlayer)
                     {
                         if (opponent.Money >= 2 && c.Gain == 2)
                         {
