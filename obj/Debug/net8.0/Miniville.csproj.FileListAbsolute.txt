@@ -1,0 +1,15 @@
+C:\Users\Master\Desktop\Cours\USRS46 - Introduction à la POO en C#\Module 1\Miniville\obj\Debug\net8.0\Miniville.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Master\Desktop\Cours\USRS46 - Introduction à la POO en C#\Module 1\Miniville\obj\Debug\net8.0\Miniville.AssemblyInfoInputs.cache
+C:\Users\Master\Desktop\Cours\USRS46 - Introduction à la POO en C#\Module 1\Miniville\obj\Debug\net8.0\Miniville.AssemblyInfo.cs
+C:\Users\Master\Desktop\Cours\USRS46 - Introduction à la POO en C#\Module 1\Miniville\obj\Debug\net8.0\Miniville.csproj.CoreCompileInputs.cache
+C:\Users\Master\Desktop\Cours\USRS46 - Introduction à la POO en C#\Module 1\Miniville\obj\Debug\net8.0\Miniville.sourcelink.json
+C:\Users\Master\Desktop\Cours\USRS46 - Introduction à la POO en C#\Module 1\Miniville\bin\Debug\net8.0\Miniville.exe
+C:\Users\Master\Desktop\Cours\USRS46 - Introduction à la POO en C#\Module 1\Miniville\bin\Debug\net8.0\Miniville.deps.json
+C:\Users\Master\Desktop\Cours\USRS46 - Introduction à la POO en C#\Module 1\Miniville\bin\Debug\net8.0\Miniville.runtimeconfig.json
+C:\Users\Master\Desktop\Cours\USRS46 - Introduction à la POO en C#\Module 1\Miniville\bin\Debug\net8.0\Miniville.dll
+C:\Users\Master\Desktop\Cours\USRS46 - Introduction à la POO en C#\Module 1\Miniville\bin\Debug\net8.0\Miniville.pdb
+C:\Users\Master\Desktop\Cours\USRS46 - Introduction à la POO en C#\Module 1\Miniville\obj\Debug\net8.0\Miniville.dll
+C:\Users\Master\Desktop\Cours\USRS46 - Introduction à la POO en C#\Module 1\Miniville\obj\Debug\net8.0\refint\Miniville.dll
+C:\Users\Master\Desktop\Cours\USRS46 - Introduction à la POO en C#\Module 1\Miniville\obj\Debug\net8.0\Miniville.pdb
+C:\Users\Master\Desktop\Cours\USRS46 - Introduction à la POO en C#\Module 1\Miniville\obj\Debug\net8.0\Miniville.genruntimeconfig.cache
+C:\Users\Master\Desktop\Cours\USRS46 - Introduction à la POO en C#\Module 1\Miniville\obj\Debug\net8.0\ref\Miniville.dll
