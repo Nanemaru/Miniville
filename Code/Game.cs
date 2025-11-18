@@ -70,6 +70,7 @@ namespace MiniVille
             if (CheckWin(active))
             {
                 Console.WriteLine($"\n{active.Name} a gagné avec {active.Money} pièces !");
+                Console.ReadKey(); // <- appuyer sur une touche pour quitter le programme
                 return true;
             }
 
