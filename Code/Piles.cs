@@ -7,14 +7,14 @@ namespace MiniVille
         public List<Cards> AvailableCards = new List<Cards> { };
         //On fait appel au struct CardsInfo via la classe Cards dans laquelle il est contenu
         //Les noms de certaines variables sont ici en français pour des raisons d'affichage
-        private static Cards.CardsInfo champBle = new Cards.CardsInfo(0, "Bleu", 1, "Champs de blé", "Recevez 1 pièce", 1, 1);
-        private static Cards.CardsInfo ferme = new Cards.CardsInfo(1, "Bleu", 2, "Ferme", "Recevez 1 pièce", 1, 1);
-        private static Cards.CardsInfo boulangerie = new Cards.CardsInfo(2, "Vert", 1, "Boulangerie", "Recevez 2 pièces", 2, 2);
-        private static Cards.CardsInfo cafe = new Cards.CardsInfo(3, "Rouge", 2, "Café", "Recevez 1 pièce du joueur qui a lancé le dé", 3, 1);
-        private static Cards.CardsInfo superette = new Cards.CardsInfo(4, "Vert", 2, "Superette", "Recevez 3 pièces", 4, 3);
-        private static Cards.CardsInfo foret = new Cards.CardsInfo(5, "Bleu", 2, "Forêt", "Recevez 1 pièce", 5, 1);
-        private static Cards.CardsInfo restaurant = new Cards.CardsInfo(6, "Rouge", 4, "Restaurant", "Recevez 2 pièces du joueur qui a lancé le dé", 5, 2);
-        private static Cards.CardsInfo stade = new Cards.CardsInfo(7, "Bleu", 6, "Stade", "Recevez 4 pièces", 6, 4);
+        private static Cards.CardsInfo champBle = new Cards.CardsInfo(0, "Blue", 1, "Champs de blé", "Recevez 1 pièce", 1, 1);
+        private static Cards.CardsInfo ferme = new Cards.CardsInfo(1, "Blue", 2, "Ferme", "Recevez 1 pièce", 1, 1);
+        private static Cards.CardsInfo boulangerie = new Cards.CardsInfo(2, "Green", 1, "Boulangerie", "Recevez 2 pièces", 2, 2);
+        private static Cards.CardsInfo cafe = new Cards.CardsInfo(3, "Red", 2, "Café", "Recevez 1 pièce du joueur qui a lancé le dé", 3, 1);
+        private static Cards.CardsInfo superette = new Cards.CardsInfo(4, "Green", 2, "Superette", "Recevez 3 pièces", 4, 3);
+        private static Cards.CardsInfo foret = new Cards.CardsInfo(5, "Blue", 2, "Forêt", "Recevez 1 pièce", 5, 1);
+        private static Cards.CardsInfo restaurant = new Cards.CardsInfo(6, "Red", 4, "Restaurant", "Recevez 2 pièces du joueur qui a lancé le dé", 5, 2);
+        private static Cards.CardsInfo stade = new Cards.CardsInfo(7, "Blue", 6, "Stade", "Recevez 4 pièces", 6, 4);
 
         //Pourrais être remplacé par une liste
         Dictionary<int, Cards.CardsInfo> dico = new Dictionary<int, Cards.CardsInfo>
@@ -59,7 +59,7 @@ namespace MiniVille
                         cardCount++;
                     }
                 }
-                toString += string.Format("{0}x {1} - {2} [{3}] : {4} - {5}$ \n", cardCount, dico[i].Name, dico[i].Color, dico[i].Dice, dico[i].Effect, dico[i].Cost);
+                toString += string.Format("{0} * {1} - {2} [{3}] : {4} - {5}$ \n", cardCount, dico[i].Name, dico[i].Color, dico[i].Dice, dico[i].Effect, dico[i].Cost);
             }
 
             return toString;

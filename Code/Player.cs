@@ -5,12 +5,14 @@ namespace MiniVille
     internal class Player
     {
         public string Name;
-        public int Money = 3;
-        public List<Cards> City = new List<Cards>;
+        public int Money;
+        public List<Cards> City;
 
         public Player(string name)
         {
             Name = name;
+            Money = 3;
+            City = new List<Cards>();
         }
 
         public void AddCard(Cards card)
@@ -29,15 +31,15 @@ namespace MiniVille
             {
                 if (diceValue == c.Dice)
                 {
-                    if (c.Color == "Bleu")
+                    if (c.Color == "Blue")
                     {
                         Money += c.Gain;
                     }
-                    else if (c.Color == "Vert" && isCurrentPlayer)
+                    else if (c.Color == "Green" && isCurrentPlayer)
                     {
                         Money += c.Gain;
                     }
-                    else if (c.Color == "Rouge" && !isCurrentPlayer)
+                    else if (c.Color == "Red" && !isCurrentPlayer)
                     {
                         if (opponent.Money >= 2 && c.Gain == 2)
                         {

@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Reflection.Metadata.Ecma335;
 
 namespace MiniVille
 {
@@ -91,13 +90,11 @@ namespace MiniVille
             Console.WriteLine("Pièces : {0}", player.Money);
             Console.ForegroundColor = ConsoleColor.White;
             Console.WriteLine("Souhaitez-vous acheter une carte ? (o/n)");
-            
-            while (true)
-            {
-                string choice = Console.ReadLine()?.ToLower();
+            string choice = Console.ReadLine()?.ToLower();
+
                 switch (choice)
                 {
-                    case "o":
+                case "o" | "oui" | "Oui":
                     {
                         List<int> alreadyDisplayedCards = new List<int>();
                         int cardCount = 0;
@@ -120,6 +117,7 @@ namespace MiniVille
                         Console.WriteLine("Entrez le nom exact de la carte à acheter :");
                         string name = Console.ReadLine();
 
+
                         var card = piles.AvailableCards.FirstOrDefault(c => c.Name.Equals(name, StringComparison.OrdinalIgnoreCase));
                         if (card != null && player.Money >= card.Cost)
                         {
@@ -134,18 +132,16 @@ namespace MiniVille
                             break;
                         }
                     }
-                    case "n":
+                case "n" | "non" | "Non":
                     {
                         Console.WriteLine("{0} n'achète rien", player.Name);
-                        break;
                     }
-                    default:
+                default:
                     {
                         Console.WriteLine("Vous devez choisir une réponse valide.");
-                        continue;
+                        Continue;
                     }
-                }
-                break;
+            }
             }
         }
 
