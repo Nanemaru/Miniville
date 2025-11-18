@@ -13,3 +13,18 @@ C:\Users\Master\Desktop\Cours\USRS46 - Introduction à la POO en C#\Module 1\Min
 C:\Users\Master\Desktop\Cours\USRS46 - Introduction à la POO en C#\Module 1\Miniville\obj\Debug\net8.0\Miniville.pdb
 C:\Users\Master\Desktop\Cours\USRS46 - Introduction à la POO en C#\Module 1\Miniville\obj\Debug\net8.0\Miniville.genruntimeconfig.cache
 C:\Users\Master\Desktop\Cours\USRS46 - Introduction à la POO en C#\Module 1\Miniville\obj\Debug\net8.0\ref\Miniville.dll
+C:\Users\Bouet\OneDrive\Bureau\Kerian\CNAM ENJMIN\Travail en ligne\Prog\Travail git\Miniville\obj\Debug\net8.0\Miniville.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Bouet\OneDrive\Bureau\Kerian\CNAM ENJMIN\Travail en ligne\Prog\Travail git\Miniville\obj\Debug\net8.0\Miniville.AssemblyInfoInputs.cache
+C:\Users\Bouet\OneDrive\Bureau\Kerian\CNAM ENJMIN\Travail en ligne\Prog\Travail git\Miniville\obj\Debug\net8.0\Miniville.AssemblyInfo.cs
+C:\Users\Bouet\OneDrive\Bureau\Kerian\CNAM ENJMIN\Travail en ligne\Prog\Travail git\Miniville\obj\Debug\net8.0\Miniville.csproj.CoreCompileInputs.cache
+C:\Users\Bouet\OneDrive\Bureau\Kerian\CNAM ENJMIN\Travail en ligne\Prog\Travail git\Miniville\obj\Debug\net8.0\Miniville.sourcelink.json
+C:\Users\Bouet\OneDrive\Bureau\Kerian\CNAM ENJMIN\Travail en ligne\Prog\Travail git\Miniville\obj\Debug\net8.0\Miniville.dll
+C:\Users\Bouet\OneDrive\Bureau\Kerian\CNAM ENJMIN\Travail en ligne\Prog\Travail git\Miniville\obj\Debug\net8.0\refint\Miniville.dll
+C:\Users\Bouet\OneDrive\Bureau\Kerian\CNAM ENJMIN\Travail en ligne\Prog\Travail git\Miniville\obj\Debug\net8.0\Miniville.pdb
+C:\Users\Bouet\OneDrive\Bureau\Kerian\CNAM ENJMIN\Travail en ligne\Prog\Travail git\Miniville\bin\Debug\net8.0\Miniville.exe
+C:\Users\Bouet\OneDrive\Bureau\Kerian\CNAM ENJMIN\Travail en ligne\Prog\Travail git\Miniville\bin\Debug\net8.0\Miniville.deps.json
+C:\Users\Bouet\OneDrive\Bureau\Kerian\CNAM ENJMIN\Travail en ligne\Prog\Travail git\Miniville\bin\Debug\net8.0\Miniville.runtimeconfig.json
+C:\Users\Bouet\OneDrive\Bureau\Kerian\CNAM ENJMIN\Travail en ligne\Prog\Travail git\Miniville\bin\Debug\net8.0\Miniville.dll
+C:\Users\Bouet\OneDrive\Bureau\Kerian\CNAM ENJMIN\Travail en ligne\Prog\Travail git\Miniville\bin\Debug\net8.0\Miniville.pdb
+C:\Users\Bouet\OneDrive\Bureau\Kerian\CNAM ENJMIN\Travail en ligne\Prog\Travail git\Miniville\obj\Debug\net8.0\Miniville.genruntimeconfig.cache
+C:\Users\Bouet\OneDrive\Bureau\Kerian\CNAM ENJMIN\Travail en ligne\Prog\Travail git\Miniville\obj\Debug\net8.0\ref\Miniville.dll
