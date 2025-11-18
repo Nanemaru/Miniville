@@ -29,7 +29,7 @@ namespace MiniVille
         {
             foreach (Cards c in City)
             {
-                if (diceValue == c.Dice)
+                if (diceValue == c.Dice1 || diceValue == c.Dice2)
                 {
                     if (c.Color == "Blue")
                     {
@@ -87,7 +87,7 @@ namespace MiniVille
                             Console.ForegroundColor = ConsoleColor.DarkRed;
                             break;
                     }
-                    Console.Write("+==============+\n| Activation:{0} |\n|              |\n|              |\n|              |\n|              |\n|              |\n|{1}", c.Dice, c.Name);
+                    Console.Write("+==============+\n| Activation:{0} |\n|              |\n|              |\n|              |\n|              |\n|              |\n|{1}", c.Dice1, c.Name);
                     for (int i = (14 - c.Name.Length); i > 0; i--)
                     {
                         Console.Write(space);

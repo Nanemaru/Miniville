@@ -8,7 +8,8 @@
         public string Color { get; private set; }
         public int Cost { get; private set; }
         public string Effect { get; private set; }
-        public int Dice { get; private set; }
+        public int Dice1 { get; private set; }
+        public int Dice2 { get; private set; }
         public int Gain { get; private set; }
 
         public Cards(CardsInfo info)
@@ -18,20 +19,22 @@
             Color = info.Color;
             Cost = info.Cost;
             Effect = info.Effect;
-            Dice = info.Dice;
+            Dice1 = info.Dice1;
+            Dice2 = info.Dice2;
             Gain = info.Gain;
         }
 
         public struct CardsInfo
         {
-            public CardsInfo(int id, string color, int cost, string name, string effect, int dice, int gain)
+            public CardsInfo(int id, string color, int cost, string name, string effect, int dice1, int dice2, int gain)
             {
                 Id = id;
                 Color = color;
                 Cost = cost;
                 Name = name;
                 Effect = effect;
-                Dice = dice;
+                Dice1 = dice1;
+                Dice2 = dice2;
                 Gain = gain;
             }
 
@@ -40,13 +43,14 @@
             public int Cost { get; set; }
             public string Name { get; set; }
             public string Effect { get; set; }
-            public int Dice { get; set; }
+            public int Dice1 { get; set; }
+            public int Dice2 { get; set; }
             public int Gain { get; set; }
         }
 
         public override string ToString()
         {
-            return $"[{Dice}] {Color} - {Name} : {Effect} - {Cost}$";
+            return $"[{Dice1}] {Color} - {Name} : {Effect} - {Cost}$";
         }
     }
 }
