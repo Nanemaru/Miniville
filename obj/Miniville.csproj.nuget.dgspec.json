@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Bouet\\OneDrive\\Bureau\\Kerian\\CNAM ENJMIN\\Travail en ligne\\Prog\\Travail git\\Miniville\\Miniville.csproj": {}
+    "C:\\Users\\toliv\\Documents\\ENJMIN\\L1\\Cours\\Programmation C#\\USRS46 Programmation Objet\\POO-Exercices\\_GitHubPOO\\Miniville\\Miniville.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Bouet\\OneDrive\\Bureau\\Kerian\\CNAM ENJMIN\\Travail en ligne\\Prog\\Travail git\\Miniville\\Miniville.csproj": {
+    "C:\\Users\\toliv\\Documents\\ENJMIN\\L1\\Cours\\Programmation C#\\USRS46 Programmation Objet\\POO-Exercices\\_GitHubPOO\\Miniville\\Miniville.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Bouet\\OneDrive\\Bureau\\Kerian\\CNAM ENJMIN\\Travail en ligne\\Prog\\Travail git\\Miniville\\Miniville.csproj",
+        "projectUniqueName": "C:\\Users\\toliv\\Documents\\ENJMIN\\L1\\Cours\\Programmation C#\\USRS46 Programmation Objet\\POO-Exercices\\_GitHubPOO\\Miniville\\Miniville.csproj",
         "projectName": "Miniville",
-        "projectPath": "C:\\Users\\Bouet\\OneDrive\\Bureau\\Kerian\\CNAM ENJMIN\\Travail en ligne\\Prog\\Travail git\\Miniville\\Miniville.csproj",
-        "packagesPath": "C:\\Users\\Bouet\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Bouet\\OneDrive\\Bureau\\Kerian\\CNAM ENJMIN\\Travail en ligne\\Prog\\Travail git\\Miniville\\obj\\",
+        "projectPath": "C:\\Users\\toliv\\Documents\\ENJMIN\\L1\\Cours\\Programmation C#\\USRS46 Programmation Objet\\POO-Exercices\\_GitHubPOO\\Miniville\\Miniville.csproj",
+        "packagesPath": "C:\\Users\\toliv\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\toliv\\Documents\\ENJMIN\\L1\\Cours\\Programmation C#\\USRS46 Programmation Objet\\POO-Exercices\\_GitHubPOO\\Miniville\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Bouet\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\toliv\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -44,7 +45,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
@@ -65,7 +66,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

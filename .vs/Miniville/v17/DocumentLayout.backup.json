@@ -21,6 +21,14 @@
           "SelectedChildIndex": 3,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Piles.cs",
@@ -34,22 +42,14 @@
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
-            },
-            {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Game.cs",
               "DocumentMoniker": "C:\\Users\\Master\\Desktop\\Cours\\USRS46 - Introduction \u00E0 la POO en C#\\Module 1\\Miniville\\Code\\Game.cs",
               "RelativeDocumentMoniker": "Code\\Game.cs",
-              "ToolTip": "C:\\Users\\Master\\Desktop\\Cours\\USRS46 - Introduction \u00E0 la POO en C#\\Module 1\\Miniville\\Code\\Game.cs*",
-              "RelativeToolTip": "Code\\Game.cs*",
-              "ViewState": "AgIAAGQAAAAAAAAAAAAkwGsAAAAxAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Master\\Desktop\\Cours\\USRS46 - Introduction \u00E0 la POO en C#\\Module 1\\Miniville\\Code\\Game.cs",
+              "RelativeToolTip": "Code\\Game.cs",
+              "ViewState": "AgIAAGcAAAAAAAAAAAAkwHAAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-18T09:14:47.957Z",
               "EditorCaption": ""
