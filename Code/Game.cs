@@ -107,15 +107,58 @@ namespace MiniVille
                     {
                         Console.WriteLine(piles);
                         Console.WriteLine("\nEntrez le numéro de la carte à acheter :");
+                        string input = Console.ReadLine();
+                        bool testInput = int.TryParse(input, out int num);
 
-                        
-                        
-                        
-                        int num = int.Parse(Console.ReadLine());
-                        
-                        string name = Console.ReadLine();
+                        while (testInput == false || num < 1 || num > 8)
+                        {
+                            int.TryParse(input, out num);
+                            Console.WriteLine(piles);
+                            Console.WriteLine("\nEntrez le numéro de la carte à acheter :");
+                            input = Console.ReadLine();
+                        }
 
-                        
+                        string name = string.Empty;
+
+                        switch (num)
+                        {
+                            case 1:
+                                name = piles.dico[0].Name;
+                                testInput = true;
+                                break;
+                            case 2:
+                                name = piles.dico[1].Name;
+                                testInput = true;
+                                break;
+                            case 3:
+                                name = piles.dico[2].Name;
+                                testInput = true;
+                                break;
+                            case 4:
+                                name = piles.dico[3].Name;
+                                testInput = true;
+                                break;
+                            case 5:
+                                name = piles.dico[4].Name;
+                                testInput = true;
+                                break;
+                            case 6:
+                                name = piles.dico[5].Name;
+                                testInput = true;
+                                break;
+                            case 7:
+                                name = piles.dico[6].Name;
+                                testInput = true;
+                                break;
+                            case 8:
+                                name = piles.dico[7].Name;
+                                testInput = true;
+                                break;
+
+                            default:
+                                continue;
+
+                        }
 
                         var card = piles.AvailableCards.FirstOrDefault(c => c.Name.Equals(name, StringComparison.OrdinalIgnoreCase));
                         
