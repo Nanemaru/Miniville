@@ -9,6 +9,7 @@ namespace MiniVille
         private Player player;
         private Player ai;
         private Piles piles;
+        
 
         public Game()
         {
@@ -86,21 +87,28 @@ namespace MiniVille
             - Nombre de pièces
             - Question au joueur
             */
+
+
             Console.WriteLine($"{player.Name} a obtenu {result}.");
             Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine("Pièces : {0}", player.Money);
             Console.ForegroundColor = ConsoleColor.White;
-            Console.WriteLine("Souhaitez-vous acheter une carte ? (o/n)");
-            
-            while (true)
+            bool check = false;
+
+            while (check == false)
             {
+                Console.WriteLine("Souhaitez-vous acheter une carte ? (o/n)");
                 string choice = Console.ReadLine()?.ToLower();
+
                 switch (choice)
                 {
                     case "o":
                     {
                         List<int> alreadyDisplayedCards = new List<int>();
                         int cardCount = 0;
+                        int cardNum = 1;
+
+                        //Affichage cartes restantes
                         foreach (Cards c in piles.AvailableCards)
                         {
                             if (!alreadyDisplayedCards.Contains(c.Id))
@@ -108,24 +116,36 @@ namespace MiniVille
                                 alreadyDisplayedCards.Add(c.Id);
                                 for (int i = 0; i < piles.AvailableCards.Count; i++)
                                 {
+                                    cardCount = 0;
                                     if (piles.AvailableCards[i].Id == c.Id)
                                     {
                                         cardCount++;
                                     }
                                 }
-                                Console.WriteLine("x{0} {1}", cardCount, c.Name);
-                                cardCount = 0;
+
+                                Console.WriteLine("\nCarte N°{0} : {1}\nCout : {2}$\nNombre de {3} restant : {4}", cardNum, c.Name, c.Cost, c.Name.ToLower(), cardCount);
+                                cardNum++;
                             }
                         }
-                        Console.WriteLine("Entrez le nom exact de la carte à acheter :");
+
+                        Console.WriteLine("\nEntrez le numéro de la carte à acheter :");
+                        while (int.TryParse(Console.ReadLine(), out int num))
+                        {
+                            
+                        }
+                        
                         string name = Console.ReadLine();
 
+                        
+
                         var card = piles.AvailableCards.FirstOrDefault(c => c.Name.Equals(name, StringComparison.OrdinalIgnoreCase));
+                        
                         if (card != null && player.Money >= card.Cost)
                         {
                             player.AddCard(card);
                             piles.AvailableCards.Remove(card);
                             Console.WriteLine($"{player.Name} achète {card.Name} !"); //good
+                            check = true;
                             break;
                         }
                         else
@@ -134,18 +154,22 @@ namespace MiniVille
                             break;
                         }
                     }
+
                     case "n":
                     {
                         Console.WriteLine("{0} n'achète rien", player.Name);
+                        check = true;
                         break;
                     }
+
                     default:
                     {
                         Console.WriteLine("Vous devez choisir une réponse valide.");
                         continue;
                     }
+
                 }
-                break;
+
             }
         }
 
