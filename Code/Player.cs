@@ -31,15 +31,15 @@ namespace MiniVille
             {
                 if (diceValue == c.Dice1 || diceValue == c.Dice2)
                 {
-                    if (c.Color == "Blue")
+                    if (c.Color == "Bleu")
                     {
                         Money += c.Gain;
                     }
-                    else if (c.Color == "Green" && isCurrentPlayer)
+                    else if (c.Color == "Vert" && isCurrentPlayer)
                     {
                         Money += c.Gain;
                     }
-                    else if (c.Color == "Red" && !isCurrentPlayer)
+                    else if (c.Color == "Rouge" && !isCurrentPlayer)
                     {
                         if (opponent.Money >= 2 && c.Gain == 2)
                         {
@@ -87,12 +87,19 @@ namespace MiniVille
                             Console.ForegroundColor = ConsoleColor.DarkRed;
                             break;
                     }
-                    Console.Write("+==============+\n| Activation:{0} |\n|              |\n|              |\n|              |\n|              |\n|              |\n|{1}", c.Dice1, c.Name);
+                    if (c.Dice1 == c.Dice2)
+                    {
+                        Console.Write("+==============+\n|       {0}      |\n|              |\n|              |\n|              |\n|{1}", c.Dice1, c.Name);
+                    }
+                    else
+                    {
+                        Console.Write("+==============+\n|     {0}    |\n|              |\n|              |\n|              |\n|{1}", c.Dice1 + " / " + c.Dice2, c.Name);
+                    }
                     for (int i = (14 - c.Name.Length); i > 0; i--)
                     {
                         Console.Write(space);
                     }
-                    Console.Write("|\n|              |\n|Cost:{0}$       |\n|Gain:{1}$       |\n+==============+\n       x{2}\n", c.Cost, c.Gain, cardCount);
+                    Console.Write("|\n|              |\n|              |\n|              |\n|Cost:{0}$       |\n|Gain:{1}$       |\n+==============+\n       x{2}\n", c.Cost, c.Gain, cardCount);
                 }
             }
             Console.ForegroundColor = ConsoleColor.White;
