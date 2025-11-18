@@ -17,7 +17,7 @@ namespace MiniVille
         private static Cards.CardsInfo stade = new Cards.CardsInfo(7, "Blue", 6, "Stade", "Recevez 4 pièces", 6, 4);
 
         //Pourrais être remplacé par une liste
-        Dictionary<int, Cards.CardsInfo> dico = new Dictionary<int, Cards.CardsInfo>
+        public Dictionary<int, Cards.CardsInfo> dico = new Dictionary<int, Cards.CardsInfo>
         {
             {0, champBle},
             {1, ferme},

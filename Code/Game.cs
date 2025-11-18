@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Reflection.Metadata.Ecma335;
+using System.Runtime.CompilerServices;
 
 namespace MiniVille
 {
@@ -104,35 +105,13 @@ namespace MiniVille
                 {
                     case "o":
                     {
-                        List<int> alreadyDisplayedCards = new List<int>();
-                        int cardCount = 0;
-                        int cardNum = 1;
-
-                        //Affichage cartes restantes
-                        foreach (Cards c in piles.AvailableCards)
-                        {
-                            if (!alreadyDisplayedCards.Contains(c.Id))
-                            {
-                                alreadyDisplayedCards.Add(c.Id);
-                                for (int i = 0; i < piles.AvailableCards.Count; i++)
-                                {
-                                    cardCount = 0;
-                                    if (piles.AvailableCards[i].Id == c.Id)
-                                    {
-                                        cardCount++;
-                                    }
-                                }
-
-                                Console.WriteLine("\nCarte N°{0} : {1}\nCout : {2}$\nNombre de {3} restant : {4}", cardNum, c.Name, c.Cost, c.Name.ToLower(), cardCount);
-                                cardNum++;
-                            }
-                        }
-
+                        Console.WriteLine(piles);
                         Console.WriteLine("\nEntrez le numéro de la carte à acheter :");
-                        while (int.TryParse(Console.ReadLine(), out int num))
-                        {
-                            
-                        }
+
+                        
+                        
+                        
+                        int num = int.Parse(Console.ReadLine());
                         
                         string name = Console.ReadLine();
 
