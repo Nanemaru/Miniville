@@ -1,6 +1,6 @@
 ﻿using MiniVille;
 
-namespace Miniville
+namespace MiniVille
 {
     public class Piles
     {

@@ -1,4 +1,4 @@
-﻿using Miniville;
+﻿using MiniVille;
 
 namespace MiniVille
 {
