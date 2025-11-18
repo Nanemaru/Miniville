@@ -7,16 +7,16 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Code\\Player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Bouet\\OneDrive\\Bureau\\Kerian\\CNAM ENJMIN\\Travail en ligne\\Prog\\Travail git\\Miniville\\Code\\Piles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Code\\Piles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Bouet\\OneDrive\\Bureau\\Kerian\\CNAM ENJMIN\\Travail en ligne\\Prog\\Travail git\\Miniville\\Code\\Cards.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Code\\Cards.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Bouet\\OneDrive\\Bureau\\Kerian\\CNAM ENJMIN\\Travail en ligne\\Prog\\Travail git\\Miniville\\Code\\Game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Code\\Game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Bouet\\OneDrive\\Bureau\\Kerian\\CNAM ENJMIN\\Travail en ligne\\Prog\\Travail git\\Miniville\\Code\\Piles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Code\\Piles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -40,46 +40,46 @@
               "RelativeDocumentMoniker": "Code\\Player.cs",
               "ToolTip": "C:\\Users\\Bouet\\OneDrive\\Bureau\\Kerian\\CNAM ENJMIN\\Travail en ligne\\Prog\\Travail git\\Miniville\\Code\\Player.cs",
               "RelativeToolTip": "Code\\Player.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAACoAAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-18T10:10:38.743Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Piles.cs",
               "DocumentMoniker": "C:\\Users\\Bouet\\OneDrive\\Bureau\\Kerian\\CNAM ENJMIN\\Travail en ligne\\Prog\\Travail git\\Miniville\\Code\\Piles.cs",
               "RelativeDocumentMoniker": "Code\\Piles.cs",
               "ToolTip": "C:\\Users\\Bouet\\OneDrive\\Bureau\\Kerian\\CNAM ENJMIN\\Travail en ligne\\Prog\\Travail git\\Miniville\\Code\\Piles.cs",
               "RelativeToolTip": "Code\\Piles.cs",
-              "ViewState": "AgIAADAAAAAAAAAAAAAAAEMAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAADEAAAAAAAAAAADgv0MAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-18T10:03:54.763Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Cards.cs",
               "DocumentMoniker": "C:\\Users\\Bouet\\OneDrive\\Bureau\\Kerian\\CNAM ENJMIN\\Travail en ligne\\Prog\\Travail git\\Miniville\\Code\\Cards.cs",
               "RelativeDocumentMoniker": "Code\\Cards.cs",
               "ToolTip": "C:\\Users\\Bouet\\OneDrive\\Bureau\\Kerian\\CNAM ENJMIN\\Travail en ligne\\Prog\\Travail git\\Miniville\\Code\\Cards.cs",
               "RelativeToolTip": "Code\\Cards.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAAC8AAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAACIAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-18T10:03:48.615Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "Game.cs",
               "DocumentMoniker": "C:\\Users\\Bouet\\OneDrive\\Bureau\\Kerian\\CNAM ENJMIN\\Travail en ligne\\Prog\\Travail git\\Miniville\\Code\\Game.cs",
               "RelativeDocumentMoniker": "Code\\Game.cs",
               "ToolTip": "C:\\Users\\Bouet\\OneDrive\\Bureau\\Kerian\\CNAM ENJMIN\\Travail en ligne\\Prog\\Travail git\\Miniville\\Code\\Game.cs",
               "RelativeToolTip": "Code\\Game.cs",
-              "ViewState": "AgIAAIAAAAAAAAAAAAAwwFgAAAALAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAACEAAABOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-18T09:14:47.957Z",
               "EditorCaption": ""

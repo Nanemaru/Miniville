@@ -5,14 +5,12 @@ namespace MiniVille
     internal class Player
     {
         public string Name;
-        public int Money;
-        public List<Cards> City;
+        public int Money = 3;
+        public List<Cards> City = new List<Cards>;
 
         public Player(string name)
         {
             Name = name;
-            Money = 3;
-            City = new List<Cards>();
         }
 
         public void AddCard(Cards card)
