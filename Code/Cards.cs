@@ -50,7 +50,16 @@
 
         public override string ToString()
         {
-            return $"[{Dice1}] {Color} - {Name} : {Effect} - {Cost}$";
+            string Dice2ifDifferent = "";
+            if (Dice2 != Dice1)
+            {
+                Dice2ifDifferent = " - " + Dice2.ToString();
+            }
+            else
+            {
+                Dice2ifDifferent = "";
+            }
+            return $"[{Dice1}{Dice2ifDifferent}] {Color} - {Name} : {Effect} - {Cost}$";
         }
     }
 }
