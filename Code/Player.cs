@@ -17,12 +17,8 @@ namespace MiniVille
 
         public void AddCard(Cards card)
         {
-            if (Money >= card.Cost)
-            {
                 Money -= card.Cost;
                 City.Add(card);
-            }
-            else { Console.WriteLine("{0} n'a pas assez d'argent pour acheter une carte {1}", Name, card.Name); }
         }
 
         public void ActivateCards(int diceValue, bool isCurrentPlayer, Player opponent)
