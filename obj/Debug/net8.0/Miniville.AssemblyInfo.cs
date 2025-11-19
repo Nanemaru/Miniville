@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Miniville")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7b35728cefeac40590c92ffd211db6aae2b7a88d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+edee343b496daa402783136098ca51bdbada9448")]
 [assembly: System.Reflection.AssemblyProductAttribute("Miniville")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Miniville")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
